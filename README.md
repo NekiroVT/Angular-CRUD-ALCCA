@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AppCasoNuevo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.4.
@@ -25,3 +26,6 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# Angular-CRUD-ALCCA
+>>>>>>> 8418f9b7d119a2f5ec9d4b7235de343f32c0490e
