@@ -1,0 +1,39 @@
+<div class="card flex justify-content-center">
+    <p-sidebar #sidebarRef [(visible)]="sidebarVisible">
+        <ng-template pTemplate="headless">
+            <div class="flex flex-column h-full">
+                <div class="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
+                    <span class="inline-flex align-items-center gap-2">
+                        <span class="font-semibold text-2xl text-primary">Your Logo</span>
+                    </span>
+                    <span>
+                        <p-button type="button" (onClick)="closeCallback($event)" icon="pi pi-times" rounded="true" outlined="true" styleClass="h-2rem w-2rem"></p-button>
+                    </span>
+                </div>
+                <div class="overflow-y-auto">
+                    <ul class="list-none p-3 m-0">
+                        <li>
+                            <a [routerLink]="['/']" pRipple class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer">
+                                <span class="font-medium">Home</span>
+                                <i class="pi pi-home"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/producto']" pRipple class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer">
+                                <span class="font-medium">Producto</span>
+                                <i class="pi pi-box"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a [routerLink]="['/cliente']" pRipple class="p-3 flex align-items-center justify-content-between text-600 cursor-pointer">
+                                <span class="font-medium">Cliente</span>
+                                <i class="pi pi-users"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ng-template>
+    </p-sidebar>
+    <p-button (onClick)="sidebarVisible = true" icon="pi pi-arrow-right"></p-button>
+</div>
